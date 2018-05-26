@@ -1,0 +1,25 @@
+/*----------------- Colors -----------------*/
+:root {
+  --color1: #57bc90;
+  --color2: #018374;
+  --color3: #015147;
+  --colorbg: #F7F7F7;
+  --colorborder: #F7F7F7;
+}
+.module{
+  padding: 20px 10px;
+  text-align: center;
+}
+/*----------------- About -----------------*/
+.about-module{
+  height: 50vh;
+  /* background-color: pink; */
+}
+/*----------------- Shop -----------------*/
+.shop-module{
+  height: 70vh;
+}
+
+.shop-module .card{
+  align-items: center;
+}
