@@ -9,7 +9,7 @@
 
 .parallax {
     /* The image used */
-    background-image: url("frangipani.jpg");
+    /* background-image: url("frangipani.jpg"); */
 
     /* Set a specific height */
     min-height: 600px;
@@ -19,11 +19,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.parallax .h1{
-  text-align: center;
-}
 
+
+    text-align: center;
+    color: white;
+}
+.parallax1{
+  background-image: url("adenium2.jpg");
+  min-height: 600px;
+}
+.parallax2{
+  background-image: url("frangipani.jpg");
+  min-height: 300px;
+}
 
 .module{
   padding: 10vh 10vw;
@@ -35,10 +43,7 @@
 }
 /*----------------- Shop -----------------*/
 .shop-module{
-  height: 70vh;
-
 }
-
 .shop-module .cl-md-6{
   float: left;
 }
