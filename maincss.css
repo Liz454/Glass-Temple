@@ -20,6 +20,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax .h1{
+  text-align: center;
+}
+
 
 .module{
   padding: 10vh 10vw;
@@ -27,13 +31,14 @@
 }
 /*----------------- About -----------------*/
 .about-module{
+  /* background-color: var(--colorbg); */
 }
 /*----------------- Shop -----------------*/
 .shop-module{
   height: 70vh;
-  background-color: var(--colorbg);
+
 }
 
-.shop-module .card{
-  align-items: center;
+.shop-module .cl-md-6{
+  float: left;
 }
