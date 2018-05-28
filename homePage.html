@@ -115,18 +115,37 @@
 <!-- Contact -->
 <div class = "contact-module module">
   <h1>Contact</h1>
-  <form>
-    <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+  <div class="row">
+    <div class="col-md-6">
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Phone">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Address">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Subject">
+        </div>
+      </form>
     </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    <div class="col-md-6">
+      <div class="form-group">
+        <textarea class="form-control" rows="10" id="comment"></textarea>
+      </div>
     </div>
   </div>
-  </form>
+  <div class="row">
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+
+
   <div class="row">
     <div class="col-md-6">
       <h3>Our location</h3>
