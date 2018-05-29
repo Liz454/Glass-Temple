@@ -6,6 +6,9 @@
   --colorbg: #F7F7F7;
   --colorborder: #F7F7F7;
 }
+body{
+  font-family: 'Assistant', sans-serif;
+}
 .parallax {
     min-height: 600px;
 
@@ -21,9 +24,7 @@
   background-image: url("flower3.jpg");
   min-height: 600px;
 }
-.parallax1 .h1{
-  font-family: 'Tangerine', cursive;
-}
+
 .parallax2{
   background-image: url("flower3.jpg");
   min-height: 300px;
