@@ -10,7 +10,7 @@ body{
   font-family: 'Assistant', sans-serif;
 }
 .parallax {
-    min-height: 600px;
+    min-height: 300px;
 
     background-attachment: fixed;
     background-position: center;
@@ -22,12 +22,14 @@ body{
 }
 .parallax1{
   background-image: url("flower3.jpg");
-  min-height: 600px;
 }
 
 .parallax2{
-  background-image: url("flower3.jpg");
-  min-height: 300px;
+  background-image: url("flo2.jpg");
+}
+
+.parallax3{
+  background-image: url("flo1.jpg");
 }
 
 .module{
@@ -36,7 +38,7 @@ body{
 }
 /*----------------- About -----------------*/
 .about-module{
-  /* background-color: var(--colorbg); */
+  /* background-color: #ffeafa; */
 }
 /*----------------- Shop -----------------*/
 .shop-module{
@@ -44,6 +46,16 @@ body{
 .shop-module .cl-md-6{
   float: left;
 }
+/*----------------- Shop -----------------*/
+.basic-care-module .module{
+  height: 20vh;
+  overflow: auto;
+}
+
+.basic-care-module .row .col .p{
+  overflow: auto;
+}
+
 /*----------------- Contact -----------------*/
 .contact-module .btn{
 
