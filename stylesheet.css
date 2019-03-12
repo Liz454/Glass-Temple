@@ -1,0 +1,155 @@
+* {
+  margin: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  padding: 50px 20px;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+.navbar {
+  font-family: 'Raleway', sans-serif;
+  transition: 1s;
+}
+.black-background {
+  background-color: #000;
+}
+.white-background {
+  background-color: #fff;
+}
+#hamburger {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+#hamburger div {
+  width: 25px;
+  height: 4px;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+#hamburger .hamburger-animations {
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes bar1-animation {
+  50% {
+    transform: translate(0px, 9px);
+  }
+  100% {
+    transform: translate(0px, 9px) rotate(45deg);
+  }
+}
+@keyframes bar1-animation--reverse {
+  50% {
+    transform: translate(0px, 9px);
+  }
+  100% {
+    transform: translate(0px, 9px) rotate(45deg);
+  }
+}
+#hamburger .bar1-animate {
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-name: bar1-animation;
+}
+#hamburger .bar1-animate--reverse {
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-name: bar1-animation--reverse;
+  animation-direction: reverse;
+}
+@keyframes bar2-animation {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes bar2-animation--reverse {
+  0% {
+    background-color: transparent;
+  }
+  90% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+#hamburger .bar2-animate {
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-name: bar2-animation;
+  animation-delay: 0.2s;
+  animation-duration: 0.1s;
+}
+#hamburger .bar2-animate--reverse {
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-name: bar2-animation--reverse;
+  animation-duration: .25s;
+}
+@keyframes bar3-animation {
+  50% {
+    transform: translate(0px, -9px);
+  }
+  100% {
+    transform: translate(0px, -9px) rotate(-45deg);
+  }
+}
+@keyframes bar3-animation--reverse {
+  50% {
+    transform: translate(0px, -9px);
+  }
+  100% {
+    transform: translate(0px, -9px) rotate(-45deg);
+  }
+}
+#hamburger .bar3-animate {
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-name: bar3-animation;
+}
+#hamburger .bar3-animate--reverse {
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-name: bar3-animation--reverse;
+  animation-direction: reverse;
+}
+.navbar-scrolled {
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 20px 0px #8a8a8a52;
+  transition: 1s;
+  color: #000;
+}
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 120px;
+  font-family: 'Milonga', cursive;
+}
+#header-image {
+  size: 100%;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

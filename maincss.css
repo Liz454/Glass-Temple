@@ -1,62 +1,56 @@
 /*----------------- Colors -----------------*/
-:root {
-  --color1: #57bc90;
-  --color2: #018374;
-  --color3: #015147;
-  --colorbg: #F7F7F7;
-  --colorborder: #F7F7F7;
-}
-body{
+body {
   font-family: 'Assistant', sans-serif;
 }
-.parallax {
-    min-height: 300px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    text-align: center;
-    color: white;
+#hamburger {
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 3;
+  position: relative;
 }
-.parallax1{
+#hamburger div {
+  width: 25px;
+  height: 4px;
+  background-color: #fff;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+.parallax {
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.parallax1 {
   background-image: url("flower3.jpg");
 }
-
-.parallax2{
+.parallax2 {
   background-image: url("flo2.jpg");
 }
-
-.parallax3{
+.parallax3 {
   background-image: url("flo1.jpg");
 }
-
-.module{
+.module {
   padding: 10vh 10vw;
   text-align: center;
 }
 /*----------------- About -----------------*/
-.about-module{
-  /* background-color: #ffeafa; */
-}
 /*----------------- Shop -----------------*/
-.shop-module{
-}
-.shop-module .cl-md-6{
+.shop-module .cl-md-6 {
   float: left;
 }
-/*----------------- Shop -----------------*/
-.basic-care-module .module{
+/*----------------- Basic care -----------------*/
+.basic-care-module .module {
   height: 20vh;
   overflow: auto;
 }
-
-.basic-care-module .row .col .p{
+.basic-care-module .row .col .p {
   overflow: auto;
 }
-
-/*----------------- Contact -----------------*/
-.contact-module .btn{
-
+.basic-care-module .h2 {
+  text-align: center;
 }
+/*----------------- Contact -----------------*/
