@@ -4,13 +4,13 @@
 html {
   scroll-behavior: smooth;
 }
-section {
-  padding: 50px 20px;
+.hidden {
+  display: none;
 }
 .container {
   width: 90%;
   max-width: 1000px;
-  margin: auto;
+  margin: 50px auto;
 }
 .navbar {
   font-family: 'Raleway', sans-serif;
@@ -22,17 +22,75 @@ section {
 .white-background {
   background-color: #fff;
 }
+#menu {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+#menu .menu_container {
+  margin: auto;
+  position: fixed;
+  font-size: 40px;
+}
+#menu .menu_container .menu-option_container {
+  display: none;
+  font-family: 'Milonga', cursive;
+  padding: 0 10px;
+  margin: 5vh 0;
+  text-decoration: none;
+  min-width: 350px;
+  cursor: pointer;
+}
+@media (max-width: 1400px) {
+  #menu .menu_container .menu-option_container {
+    font-size: 35px;
+    min-width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  #menu .menu_container .menu-option_container {
+    font-size: 30px;
+    min-width: 275px;
+  }
+}
+#menu .menu_container .menu-option_container a {
+  transition: font-weight 0.4s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: top;
+}
+#menu .menu_container .menu-option_container .menu_dash {
+  position: relative;
+  height: 2px;
+  margin: 1px 0;
+}
+#menu .menu_container .menu-option_container .menu_dash__inner {
+  width: 0%;
+  height: 2px;
+  margin: 0;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+#menu .menu_container .menu-option_container .menu_dash__inner--hover {
+  width: 100%;
+}
 #hamburger {
   cursor: pointer;
   position: fixed;
   top: 20px;
   left: 20px;
+  background-color: #000;
+  padding: 8px 10px;
 }
 #hamburger div {
   width: 25px;
   height: 4px;
   margin: 5px 0;
   border-radius: 2px;
+  background-color: #fff;
 }
 #hamburger .hamburger-animations {
   animation-duration: .5s;
@@ -143,6 +201,9 @@ section {
   color: white;
   font-size: 120px;
   font-family: 'Milonga', cursive;
+  height: 90vh;
+  background-image: url('images/3.jpg');
+  background-size: cover;
 }
 #header-image {
   size: 100%;
@@ -152,4 +213,20 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#about .about__text-container {
+  display: inline-block;
+  width: 65%;
+}
+#about .about__image-container {
+  right: 0;
+  width: 30%;
+  float: right;
+}
+#about .about__image-container .about__image {
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/4.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }

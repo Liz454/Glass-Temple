@@ -1,9 +1,9 @@
-$(window).ready(function(){
-    scrollNav();
-})
-$(window).scroll(function(){
-    scrollNav();
-})
+// $(window).ready(function(){
+//     scrollNav();
+// })
+// $(window).scroll(function(){
+//     scrollNav();
+// })
 
 function scrollNav(){
     if ($(window).scrollTop() > 300){
@@ -17,7 +17,7 @@ function scrollNav(){
 
 $(function() {
     $('#hamburger').on('click', function(){
-        // showMenu();
+        showMenu();
         var bar1 = $("#hb-bar1");
         var bar2 = $("#hb-bar2");
         var bar3 = $("#hb-bar3");
@@ -34,8 +34,33 @@ $(function() {
     });
 });
 
-
-
+// Display menu
+function showMenu() {
+    $("#menu").slideToggle(500, "swing");
+    $('.menu-option_container').fadeToggle(500);
+    $("body").toggleClass("no-scroll");
+    menuPosition();
+}
+//Menu positioning
+function menuPosition(){
+    var marginV = ($(window).height() - $('.menu_container').height()) / 2;
+    var marginH = ($(window).width() - $('.menu_container').width()) / 2;
+    if (marginH > 350){
+        marginH = $(window).width() * 0.2;
+    }
+    $('.menu_container').css({'margin': marginV +'px ' + marginH + 'px'});
+}
+// hide menu and go to selected section
+function menuButtons(id){
+    $("#hamburger").click();
+    scrollFunc(id);
+}
+// menu option underline
+$('.menu-option_container').hover(function(){
+    $(this).find('.menu_dash__inner').addClass('menu_dash__inner--hover');
+}, function(){
+    $(this).find('.menu_dash__inner').removeClass('menu_dash__inner--hover');
+});
 
 function showFAQ(a){
     var element = "faq" + a
